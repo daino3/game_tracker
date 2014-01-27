@@ -1,0 +1,5 @@
+### GameTracker
+
+This app aims to help gamblers keep track of their bets before, during and after sporting events.
+
+GameTracker runs on rails 4.0 with ruby version 1.9.3. PostgreSQL is used as the database. 

@@ -1,0 +1,44 @@
+<%= form_for @game, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :team1_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :team1_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :team2_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :team2_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :location, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :location, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :team1_score, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :team1_score, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :team2_score, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :team2_score, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :line, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :line, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                games_path, :class => 'btn' %>
+  </div>
+<% end %>
