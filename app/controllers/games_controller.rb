@@ -5,6 +5,8 @@ class GamesController < ApplicationController
   # GET /games.json
   def index
     @games = Game.all
+    # @scores = client.scores(:mlb)
+    # puts @scores
   end
 
   # GET /games/1

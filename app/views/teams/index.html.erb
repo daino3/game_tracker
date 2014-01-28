@@ -18,7 +18,7 @@
     <% @teams.each do |team| %>
       <tr>
         <td><%= link_to team.id, team_path(team) %></td>
-        <td><%= team.sport_id %></td>
+        <td><%= Sport.find(team.sport_id).name %></td>
         <td><%= team.name %></td>
         <td><%= team.wins %></td>
         <td><%= team.losses %></td>
